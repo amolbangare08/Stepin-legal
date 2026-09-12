@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How MotusFit handles your data.">
+<title>MotusFit Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;700&display=swap">
+
+<style>
+  /* Every rule is namespaced under .pp so this can be pasted into an existing site
+     without its styles colliding with anything already on the page. */
+  :root {
+    --pp-ground: #fbfcfb;
+    --pp-panel: #ffffff;
+    --pp-ink: #151917;
+    --pp-muted: #5b655f;
+    --pp-rule: #e0e6e2;
+    --pp-accent: #1c8f42;
+    --pp-accent-soft: #eef6f0;
+  }
+  :root:not([data-theme="light"]) {
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --pp-ground: #0b0d0c;
+      --pp-panel: #131715;
+      --pp-ink: #e9ece9;
+      --pp-muted: #98a29b;
+      --pp-rule: #222826;
+      --pp-accent: #46c46f;
+      --pp-accent-soft: #16241b;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --pp-ground: #0b0d0c;
+    --pp-panel: #131715;
+    --pp-ink: #e9ece9;
+    --pp-muted: #98a29b;
+    --pp-rule: #222826;
+    --pp-accent: #46c46f;
+    --pp-accent-soft: #16241b;
+    color-scheme: dark;
+  }
+
+  body { background: var(--pp-ground); }
+
+  .pp {
+    background: var(--pp-ground);
+    color: var(--pp-ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    max-width: 43rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: clamp(2.5rem, 6vw, 4.5rem) 4rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .pp-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pp-accent);
+    margin: 0 0 0.85rem;
+  }
+
+  .pp h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 1rem;
+  }
+
+  .pp-lede {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--pp-muted);
+    margin: 0 0 1.75rem;
+  }
+
+  .pp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.5rem;
+    font-size: 0.9rem;
+    color: var(--pp-muted);
+    padding-block: 1rem;
+    border-block: 1px solid var(--pp-rule);
+    margin-bottom: 2.75rem;
+  }
+  .pp-meta strong { color: var(--pp-ink); font-weight: 500; }
+
+  .pp section { margin-bottom: 2.5rem; }
+
+  .pp h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 0.9rem;
+    display: flex;
+    gap: 0.7rem;
+  }
+  /* Numbered because a policy gets cited by section, not for decoration. */
+  .pp h2 .pp-n {
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--pp-accent);
+    padding-top: 0.42rem;
+    font-variant-numeric: tabular-nums;
+    flex: none;
+  }
+
+  .pp h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.4rem;
+  }
+
+  .pp p { margin: 0 0 1rem; }
+  .pp p:last-child { margin-bottom: 0; }
+
+  .pp ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  .pp li { margin-bottom: 0.5rem; }
+  .pp li:last-child { margin-bottom: 0; }
+
+  .pp a { color: var(--pp-accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .pp a:focus-visible { outline: 2px solid var(--pp-accent); outline-offset: 3px; border-radius: 2px; }
+
+  .pp-callout {
+    background: var(--pp-accent-soft);
+    border-left: 3px solid var(--pp-accent);
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.25rem;
+    font-size: 0.96rem;
+  }
+
+  .pp-table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+  .pp table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    min-width: 30rem;
+  }
+  .pp th {
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pp-muted);
+    padding: 0 0.9rem 0.6rem 0;
+    border-bottom: 1px solid var(--pp-rule);
+  }
+  .pp td {
+    padding: 0.7rem 0.9rem 0.7rem 0;
+    border-bottom: 1px solid var(--pp-rule);
+    vertical-align: top;
+  }
+  .pp td:first-child { font-weight: 500; }
+  .pp tr:last-child td { border-bottom: none; }
+
+  .pp-contact {
+    background: var(--pp-panel);
+    border: 1px solid var(--pp-rule);
+    border-radius: 10px;
+    padding: 1.4rem 1.5rem;
+  }
+  .pp-contact p { margin-bottom: 0.5rem; }
+  .pp-email { font-size: 1.05rem; font-weight: 700; }
+
+  .pp-foot {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--pp-rule);
+    font-size: 0.85rem;
+    color: var(--pp-muted);
+  }
+
+  @media (max-width: 460px) {
+    .pp { font-size: 16px; }
+    .pp h2 { display: block; }
+    .pp h2 .pp-n { display: inline; padding-top: 0; margin-right: 0.45rem; }
+  }
+</style>
+</head>
+<body>
+<article class="pp">
+
+  <p class="pp-eyebrow">MotusFit</p>
+  <h1>Privacy Policy</h1>
+  <p class="pp-lede">
+    MotusFit records what you eat, how you move and what you weigh. That is personal information,
+    and almost all of it stays on your phone. This policy sets out exactly what the app stores,
+    the few moments anything leaves your device, and how to get rid of all of it.
+  </p>
+
+  <div class="pp-meta">
+    <span><strong>Effective</strong> 12 September 2026</span>
+    <span><strong>Last updated</strong> 12 September 2026</span>
+    <span><strong>Applies to</strong> the MotusFit Android app</span>
+  </div>
+
+  <section>
+    <h2><span class="pp-n">01</span><span>Who we are</span></h2>
+    <p>
+      MotusFit is published by Zentryx Labs. You can reach us about anything in this policy,
+      including a request to delete your data, at
+      <a href="mailto:zentryxlabs.dev@gmail.com">zentryxlabs.dev@gmail.com</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">02</span><span>The short version</span></h2>
+    <div class="pp-callout">
+      <p>
+        We do not sell your data, show you advertising, or run analytics, crash reporting or
+        third-party tracking of any kind. There is no advertising identifier in the app and no
+        profile of you anywhere.
+      </p>
+      <p style="margin-bottom:0">
+        Your training and health records live in a database on your phone. They are sent to our
+        servers only if you choose to sign in and turn on cloud backup.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">03</span><span>What the app stores on your device</span></h2>
+    <p>
+      Everything below is written to a database inside the app's private storage, which other apps
+      cannot read. You create all of it by using the app; none of it is gathered in the background.
+    </p>
+    <ul>
+      <li><strong>Activities</strong> — the GPS track of a recorded walk, run or ride, including
+        each point's position, altitude, accuracy, speed and time, plus distance, pace, splits,
+        elevation, estimated energy and any title or note you add.</li>
+      <li><strong>Food</strong> — meals you log with their calories and macronutrients, the time
+        you logged them, and any foods you save for reuse.</li>
+      <li><strong>Body</strong> — weigh-ins, height, year of birth, sex and any goal weight, which
+        are used to estimate energy expenditure and nutrient targets.</li>
+      <li><strong>Steps</strong> — a daily step total read from your phone's own step counter.</li>
+      <li><strong>Water and fasting</strong> — drinks you record, and fasts you start and finish.</li>
+      <li><strong>Settings</strong> — units, goals, reminder times and map preference.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">04</span><span>Permissions, and why each is asked for</span></h2>
+    <div class="pp-table-wrap">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>What it is for</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Location (precise)</td>
+            <td>Drawing the map and recording the route of an activity. Collected only while a
+              recording is running, which the app shows in a permanent notification.</td>
+          </tr>
+          <tr>
+            <td>Physical activity</td>
+            <td>Reading the step count your phone already keeps in hardware.</td>
+          </tr>
+          <tr>
+            <td>Camera</td>
+            <td>Scanning a barcode on food packaging. Frames are read on the device and never
+              stored or uploaded.</td>
+          </tr>
+          <tr>
+            <td>Notifications</td>
+            <td>The recording notification, the weigh-in reminder and the fasting alert.</td>
+          </tr>
+          <tr>
+            <td>Alarms, boot, wake lock</td>
+            <td>Making sure a reminder still fires after a restart and a recording is not killed
+              mid-run.</td>
+          </tr>
+          <tr>
+            <td>Internet</td>
+            <td>Map tiles, food lookups, and cloud backup if you sign in.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      You can refuse or withdraw any of these in Android's settings. The app keeps working without
+      them, minus the feature each one serves — without location it cannot record a route, and
+      without the activity permission it cannot count steps.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">05</span><span>When information leaves your phone</span></h2>
+    <p>There are four occasions, and no others.</p>
+
+    <h3>Looking up a food</h3>
+    <p>
+      Searching for a food or scanning a barcode sends the words you typed, or the barcode number,
+      to <a href="https://world.openfoodfacts.org/" rel="noopener">Open Food Facts</a> and to our
+      own server, which forwards the query to the food database provider FatSecret and passes the
+      answer back. These requests carry the search term only. They do not carry your name, your
+      account, your location or anything else you have logged.
+    </p>
+
+    <h3>Drawing a map</h3>
+    <p>
+      Map tiles are fetched from Esri's ArcGIS imagery service and from OpenFreeMap as you look at
+      a map. A tile request necessarily reveals to those providers the area of the world being
+      viewed, and your IP address, in the same way any map in any app does. Your recorded track is
+      never sent to them.
+    </p>
+
+    <h3>Signing in (optional)</h3>
+    <p>
+      If you choose to sign in, we use Google Sign-In through Firebase Authentication. We receive
+      your Google account's identifier, email address and display name, and use them only to tell
+      one account's backup from another.
+    </p>
+
+    <h3>Cloud backup (optional, and only while signed in)</h3>
+    <p>
+      While you are signed in, the app uploads a compressed copy of its whole database — the
+      activities, food, weight, steps, water, fasting and settings described in section 3 — to
+      Google Cloud Firestore, stored against your account identifier. It uploads when the app goes
+      to the background and only when something has actually changed. If you never sign in, this
+      never happens and no copy of your data exists off your phone.
+    </p>
+
+    <div class="pp-callout">
+      <p style="margin-bottom:0">
+        <strong>One thing Android does on its own.</strong> The app permits Android's built-in
+        backup, so your device may include MotusFit's data in the automatic backup Android makes to
+        your own Google Drive. That backup belongs to you and is governed by
+        <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.
+        You can switch it off in Android's Settings under Backup.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">06</span><span>What we never do</span></h2>
+    <ul>
+      <li>We do not sell or rent your data, and we do not share it with advertisers or data
+        brokers.</li>
+      <li>We run no advertising, no analytics SDK and no crash-reporting SDK.</li>
+      <li>We do not build a profile of you or track you across other apps or websites.</li>
+      <li>We do not read your data for any purpose of our own. Nobody at Zentryx Labs looks at the
+        contents of your backup.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">07</span><span>How long it is kept</span></h2>
+    <p>
+      Data on your phone stays until you delete it or uninstall the app. A cloud backup stays until
+      you ask us to delete it or delete your account; the app keeps a small number of recent
+      backups and removes older ones automatically.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">08</span><span>Deleting your data</span></h2>
+    <p><strong>On your phone.</strong> Individual records can be deleted in the app. Uninstalling
+      MotusFit removes the whole database from your device.</p>
+    <p><strong>Your account and cloud backups.</strong> Signing out in the app stops any further
+      upload but does not by itself erase what has already been stored. To erase it, open the app,
+      go to <strong>Profile &rarr; Account &rarr; Delete account</strong>. That permanently deletes
+      your account and every backup held against it, and offers to erase this phone's own copy as
+      well. It happens immediately and we are not involved.</p>
+    <p>If you no longer have the app installed, email
+      <a href="mailto:zentryxlabs.dev@gmail.com">zentryxlabs.dev@gmail.com</a> from the address you
+      signed in with and we will do it for you. We will confirm and complete the deletion within
+      30 days.</p>
+    <p>
+      Depending on where you live you may also have the right to ask what we hold, to get a copy of
+      it, to correct it, or to object to our handling it. Use the same address and we will answer.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">09</span><span>Security</span></h2>
+    <p>
+      Data on your device sits in the app's private storage, protected by Android's own sandbox and
+      by whatever screen lock and device encryption you use. Traffic to and from our servers and
+      every third party listed above travels over HTTPS. Cloud backups are held in Google Cloud
+      Firestore under access rules that permit only the signed-in account to read its own data.
+    </p>
+    <p>
+      No system is perfect, and we will not pretend otherwise. If we ever discover a breach
+      affecting your data we will tell affected users and the relevant regulator as the law
+      requires.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">10</span><span>Children</span></h2>
+    <p>
+      MotusFit is not directed at children under 13, and we do not knowingly collect their data. If
+      you believe a child has given us information, write to us and we will delete it.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">11</span><span>Health information</span></h2>
+    <p>
+      MotusFit is a fitness and food diary. It is not a medical device, it does not diagnose or
+      treat anything, and nothing it shows you is medical advice. Energy and nutrient figures are
+      estimates from published formulas and vary from person to person.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">12</span><span>Changes to this policy</span></h2>
+    <p>
+      If this policy changes we will update the date at the top of the page, and for anything
+      significant we will say so in the app before the change takes effect.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="pp-n">13</span><span>Contact</span></h2>
+    <div class="pp-contact">
+      <p>Questions, corrections, or a request to delete your data:</p>
+      <p class="pp-email"><a href="mailto:zentryxlabs.dev@gmail.com">zentryxlabs.dev@gmail.com</a></p>
+      <p style="margin-bottom:0">Zentryx Labs · publisher of MotusFit</p>
+    </div>
+  </section>
+
+  <p class="pp-foot">
+    MotusFit is an independent app and is not affiliated with Google, Esri, OpenFreeMap, Open Food
+    Facts or FatSecret. Those services are named here because the app talks to them, as described
+    in section 5.
+  </p>
+
+</article>
+</body>
+</html>
