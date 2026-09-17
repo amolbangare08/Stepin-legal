@@ -1,6 +1,6 @@
-# MotusFit — legal
+# Step-In — legal
 
-The two documents Google Play requires for the MotusFit Android app, hosted on GitHub Pages.
+The two documents Google Play requires for the Step-In Android app, hosted on GitHub Pages.
 
 | Page | Where it is used |
 |---|---|
