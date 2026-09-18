@@ -211,7 +211,7 @@
 
   <div class="pp-meta">
     <span><strong>Effective</strong> 12 September 2026</span>
-    <span><strong>Last updated</strong> 17 September 2026</span>
+    <span><strong>Last updated</strong> 18 September 2026</span>
     <span><strong>Applies to</strong> the Step-In Android app</span>
   </div>
 
@@ -253,7 +253,11 @@
         you logged them, and any foods you save for reuse.</li>
       <li><strong>Body</strong> — weigh-ins, height, year of birth, sex and any goal weight, which
         are used to estimate energy expenditure and nutrient targets.</li>
-      <li><strong>Steps</strong> — a daily step total read from your phone's own step counter.</li>
+      <li><strong>Steps</strong> — a daily step total read from your phone's own step counter. To
+        put steps taken around midnight on the right day, the app also asks Google Play services
+        on your phone to keep a record of when steps were taken (Google's Recording API). That
+        record is kept on your phone by Play services for up to ten days, needs no Google account,
+        and is not sent to us or anyone else.</li>
       <li><strong>Water and fasting</strong> — drinks you record, and fasts you start and finish.</li>
       <li><strong>Settings</strong> — units, goals, reminder times, map preference, your chosen colour and theme, and the name you give if you use the app without signing in.</li>
     </ul>
@@ -274,7 +278,8 @@
           </tr>
           <tr>
             <td>Physical activity</td>
-            <td>Reading the step count your phone already keeps in hardware.</td>
+            <td>Reading the step count your phone already keeps in hardware, and the on-device
+              record of when steps were taken that Google Play services keeps for the app.</td>
           </tr>
           <tr>
             <td>Camera</td>
